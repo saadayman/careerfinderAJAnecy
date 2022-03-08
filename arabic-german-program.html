@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     smooth scroll cdn
+ -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!--     Bootstrap CDN
+ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--  Jquery CDN
+ -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Career Finder Agency</title>
+</head>
+
+<body>
+  <!--  navigation
+ -->
+ <nav class="my-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="logo" class="img-fluid" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-8 d-flex align-items-center justify-content-center">
+                <div class="my-nav-links">
+                    <ul class="list-unstyled m-0 links-list">
+                        <li class="my-nav-links-item m-0">
+                            <a href="./arabic-index.html#contact-section" class="my-nav-links-link">تواصل معنا</a>
+                        </li>
+                        <li class="my-nav-links-item m-0 position-relative arrow-hover arab-hover">
+                            <a href="./arabic-services.html" class="my-nav-links-link">الخدمات</a>
+                            <div class="hover-dropdown">
+                                <ul class="list-unstyled m-0">
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-services.html#career-advice" class="hover-dropdown-link">
+                                            النصائح المهنية
+                                        </a>
+                                    </li>
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-services.html#work-abroad" class="hover-dropdown-link">
+                                            العمل في الخارج
+                                        </a>
+                                    </li>
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-services.html#education-abroad" class="hover-dropdown-link">
+                                            الدراسة في الخارج
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="my-nav-links-item m-0 position-relative arrow-hover arab-hover">
+                            <a href="./arabic-german-program.html" class="my-nav-links-link">البرنامج الألماني</a>
+                            <div class="hover-dropdown">
+                                <ul class="list-unstyled m-0">
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-german-program.html#working-abroad" class="hover-dropdown-link">
+                                            العمل في الخارج
+                                        </a>
+                                    </li>
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-german-program.html#education" class="hover-dropdown-link">
+                                            التعليم
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="my-nav-links-item m-0">
+                            <a href="./arabic-index.html" class="my-nav-links-link">الرئيسة</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2 d-flex align-items-center">
+                <div class="language-switch">
+                    <a href="./arabic-index.html" class="lang-pill">العربية</a><a href="./index.html"
+                        class="lang-pill">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--     mobile nav
+-->
+<nav class="my-mobile-nav">
+    <div class="container">
+        <div class="mobile-nav-wrapper">
+            <div class="mobile-nav-logo">
+                <a href="#">
+                    <img src="./images/logo.png" alt="logo-mobile" width="120" />
+                </a>
+            </div>
+            <div class="mobile-menu-btn" onclick="handleClick()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="mobile-nav-links">
+    <ul class="list-unstyled m-0">
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-index.html" class="mobile-nav-links-link"> الرئيسة</a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-services.html" class="mobile-nav-links-link"> الخدمات </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-german-program.html" class="mobile-nav-links-link"> البرنامج الألماني </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-index.html#contact-section" class="mobile-nav-links-link"> تواصل معنا </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./index.html" class="mobile-nav-links-link">
+              English
+            </a>
+          </li>
+          <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-index.html" class="mobile-nav-links-link">
+              العربية
+            </a>
+          </li>
+    </ul>
+</div>
+
+    <!--   Hero Section
+    -->
+    <section class="hero-section">
+        <div class="hero-text-wrapper">
+            <div class="container">
+                <div class="d-flex justify-content-end">
+                    <h1 class="about-us-heading m-0 ml-auto" data-aos="fade-left">البرنامج الألماني</h1>
+                </div>
+                <p class="hero-text m-0 text-right" data-aos="fade-left">
+                    ، اذا كنت تحلم بالهجرة ، فضع في اعتبارك اختيار ألمانيا في المرتبة الأولى
+                    .لأنها أرض الأحلام و الفرص ، وربما تنافس أمريكا و كندا في تقديم الامتيازات للمهاجرين
+                    ويمنح القانون الألماني الحق القانوني بلم الشمل العائلي فقط مع الزوجة و الأطفال
+                    القصر دون سن 16 عاماً    
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="hero-wrapper h-100 w-100">
+            <div class="hero-carouesl h-100 w-100">
+                <div id="carouselExampleIndicators" class="carousel slide h-100 w-100" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner h-100 w-100">
+                        <div class="carousel-item h-100 w-100 active">
+                            <div class="caro-img caro-img1"></div>
+                        </div>
+                        <div class="carousel-item h-100 w-100">
+                            <div class="caro-img caro-img2"></div>
+                        </div>
+                        <div class="carousel-item h-100 w-100">
+                            <div class="caro-img caro-img3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     program section
+ -->
+    <section class="german-section">
+        <div class="container">
+            <div id="working-abroad" class="mb-5">
+                <div class="single-pill">
+                    <a href="#work-abroad" class="single-pill-link">العمل في الخارج</a>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <div class="german-banner">
+                            <img src="./images/working-abroad-banner.png" alt="banner for working"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <div class="german-section-text">
+                            <p class="german-text text-center text-md-right position-relative">
+                                <br> .تمتع العمل في المانيا بميزه مهمه جدا، وهي أنه قد يكون وسيله للحصول علي الاقامه الدائمه و الجنسيه الالمانيه في نهاية المطاف. أصبحت شروط إصدار تأشيرة العمل أسهل.
+                                <br>نظرا للظروف التي توفرها هذه الدوله للقوي العامله، هناك العديد من المزايا التي ستأخذها بعين الاعتبار في بعض مزايا العمل في المانيا 
+                                <br>.امكانية الحصول علي الاقامه
+                                <br>.إمكانية الحصول علي تأشيرة مرافق 
+                                <br>.الوصول الي الخدمه الاجتماعيه 
+                                <br>.الرعايه الصحيه لجميع افراد الاسره 
+                                <br>.امكانية السفر الي الاتحاد الاوروبي بدون تأشيره
+                                <br>.الرواتب المرتفعه والمزايا اللافته والامن الوظيفي 
+                                <br>هي من الاسباب التي تجعل الكثير من الناس يهاجرون الي المانيا
+                                وكالتنا مستعدون دائما الي تقديم المشوره بشأن العمل و الهجره الي المانيا من خلال مكتبنا في المانيا او مكتبنا في الاردن
+                                <img src="./images/polygon.png" class="d-none d-md-block arabic-polygon-german" width="12" alt="polygon">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="education">
+                <div class="single-pill">
+                    <a href="#work-abroad" class="single-pill-link">التعليم</a>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 mb-md-0">
+                        <div class="german-banner">
+                            <img src="./images/education-banner.png" alt="banner for working" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <div class="german-section-text">
+                            <p class="german-text text-center text-md-right">
+                                إن الدراسة في أغلب الجامعات الألمانية يتم تمويلها من قبل الحكومة ، فهي تعمل 
+                                ،على استقدام الطلاب من كافة بقاع العالم 
+                                حيث تم اصدار مرسوم من قبل 
+                                الحكومة بإلغاء كل الرسوم الدراسية في 
+                                الجامعات و ذلك في العام 2014 . إلا 
+                                أن هذا الإلغاء للرسوم لا يطال الطلاب 
+                                في الدراسة العليا ، و الجامعات 
+                                الخصوصية أيضاً فهذه لها رسومها الخاصة
+                                <img src="./images/polygon.png" class="d-none d-md-block arabic-polygon-german" width="12" alt="polygon">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5">
+                <p class="german-text text-right">
+                    قد يدفع طلاب في مرحلة البكالوريوس مبالغ رمزية و ذلك لتغطية نفقات الخدمات
+                    التي تقدمها الجامعة و نفقات رسوم التسجيل ، و هي مبالغ رمزية تتراوح بين 
+                    (150-250) يورو فقط ، وقد كان هذا  القرار بالنسبة للطلاب الأجانب من الدول 
+                    الأخرى فرصة ذهبية لإكمال الدراسة في الخارج مجاناً
+                    <img src="./images/polygon.png" class="d-none d-md-block arabic-polygon-german" width="12" alt="polygon">
+                </p>
+            </div>
+            <div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 mb-md-0">
+                        <div class="german-banner">
+                            <img src="./images/education-banner-2.png" alt="banner for working"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <div class="german-section-text">
+                            <p class="german-text text-center text-md-right">
+                                وبما أن الدراسة في ألمانيا تتم باللغة الألمانية فيتوجب على الراغبين في الدراسة فيها 
+                                أن يظهرو إتقانهم للغة الألمانية ، ويتم
+                                 ذلك باجتياز أحد الأمتحانات الدولية المقررة
+                                 (A1 , A2, B1 , B2) للغة الألمانية وهي إما
+                                 حيث يجب أن يحقق شرط درجة القبول في
+                                 ،الجامعة  التي يرغب في الالتحاق بها 
+                                 ،وهو المستوى المتوسط في الاغلب 
+                                 وفي بعض الأحيان 
+                                , قد يتم استثناء بعض الطلبة من اجتياز اختبارات اللغة هذه .
+                                <img src="./images/polygon.png" class="d-none d-md-block arabic-polygon-german" width="12" alt="polygon">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     copyrights
+ -->
+    <div class="copy-rights">
+        <p class="m-0">&#169; جميع الحقوق محفوظة</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--       Custome Script
+ -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

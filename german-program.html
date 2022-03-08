@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     smooth scroll cdn
+ -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!--     Bootstrap CDN
+ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--  Jquery CDN
+ -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Career Finder Agency</title>
+</head>
+
+<body>
+        <!--  navigation
+ -->
+ <nav class="my-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="logo">
+            <a href="#">
+              <img src="./images/logo.png" alt="logo" class="img-fluid" />
+            </a>
+          </div>
+        </div>
+        <div class="col-8 d-flex align-items-center justify-content-center">
+          <div class="my-nav-links">
+            <ul class="list-unstyled m-0 links-list">
+              <li class="my-nav-links-item m-0">
+                <a href="./index.html" class="my-nav-links-link">Home</a>
+              </li>
+              <li class="my-nav-links-item m-0 position-relative arrow-hover">
+                <a href="./services.html" class="my-nav-links-link">Services</a>
+                <div class="hover-dropdown">
+                  <ul class="list-unstyled m-0">
+                    <li class="m-0 hover-dropdown-item">
+                      <a href="./services.html#career-advice" class="hover-dropdown-link">
+                        Career Advice
+                      </a>
+                    </li>
+                    <li class="m-0 hover-dropdown-item">
+                      <a href="./services.html#work-abroad" class="hover-dropdown-link">
+                        Work Abroad
+                      </a>
+                    </li>
+                    <li class="m-0 hover-dropdown-item">
+                      <a href="./services.html#education-abroad" class="hover-dropdown-link">
+                        Education Abroad
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="my-nav-links-item m-0 position-relative arrow-hover">
+                <a href="./german-program.html" class="my-nav-links-link">German-program</a>
+                <div class="hover-dropdown">
+                  <ul class="list-unstyled m-0">
+                    <li class="m-0 hover-dropdown-item">
+                      <a href="./german-program.html#working-abroad" class="hover-dropdown-link">
+                        Work Abroad
+                      </a>
+                    </li>
+                    <li class="m-0 hover-dropdown-item">
+                      <a href="./german-program.html#education" class="hover-dropdown-link">
+                        Education
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="my-nav-links-item m-0">
+                <a href="./index.html#contact-section" class="my-nav-links-link"
+                  >Contact-Us</a
+                >
+              </li>
+              <li class="my-nav-links-item m-0">
+                <a href="./about.html" class="my-nav-links-link"
+                  >About-Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2 d-flex align-items-center">
+          <div class="language-switch">
+            <a href="./arabic-index.html" class="lang-pill">العربية</a
+            ><a href="./index.html" class="lang-pill">English</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--     mobile nav
+-->
+  <nav class="my-mobile-nav">
+    <div class="container">
+      <div class="mobile-nav-wrapper">
+        <div class="mobile-nav-logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="logo-mobile" width="120" />
+          </a>
+        </div>
+        <div class="mobile-menu-btn" onclick="handleClick()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-nav-links">
+    <ul class="list-unstyled m-0">
+      <li class="m-0 mobile-nav-links-item">
+        <a href="./index.html" class="mobile-nav-links-link"> Home </a>
+      </li>
+      <li class="m-0 mobile-nav-links-item">
+        <a href="./services.html" class="mobile-nav-links-link"> Services </a>
+      </li>
+      <li class="m-0 mobile-nav-links-item">
+        <a href="./german-program.html" class="mobile-nav-links-link"> German-program </a>
+      </li>
+      <li class="m-0 mobile-nav-links-item">
+        <a href="./index.html#contact-section" class="mobile-nav-links-link"> Contact-Us </a>
+      </li>
+      <li class="m-0 mobile-nav-links-item">
+        <a href="./about.html" class="mobile-nav-links-link"> About-Us </a>
+      </li>
+      <li class="m-0 mobile-nav-links-item">
+        <a href="./index.html" class="mobile-nav-links-link">
+          English
+        </a>
+      </li>
+      <li class="m-0 mobile-nav-links-item">
+        <a href="./arabic-index.html" class="mobile-nav-links-link">
+          العربية
+        </a>
+      </li>
+    </ul>
+  </div>
+
+    <!--   Hero Section
+    -->
+    <section class="hero-section">
+        <div class="hero-text-wrapper">
+            <div class="container">
+                <h1 class="about-us-heading m-0" data-aos="fade-right">German-program</h1>
+                <p class="hero-text m-0" data-aos="fade-right">
+                    If you dream of emigrating, consider choosing Germany in the first place
+                    because it is the land of dreams and opportunities for immigrants’ privileges in
+                    terms of social, health and pension benefits.
+                    German law grants the legal right to family reunification
+                    only with the wife and children under 16 years old.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="hero-wrapper h-100 w-100">
+            <div class="hero-carouesl h-100 w-100">
+                <div id="carouselExampleIndicators" class="carousel slide h-100 w-100" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner h-100 w-100">
+                        <div class="carousel-item h-100 w-100 active">
+                            <div class="caro-img caro-img1"></div>
+                        </div>
+                        <div class="carousel-item h-100 w-100">
+                            <div class="caro-img caro-img2"></div>
+                        </div>
+                        <div class="carousel-item h-100 w-100">
+                            <div class="caro-img caro-img3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     program section
+ -->
+    <section class="german-section">
+        <div class="container">
+            <div id="working-abroad" class="mb-5" data-aos="fade-right">
+                <div class="single-pill">
+                    <a href="#work-abroad" class="single-pill-link">Work Abroad</a>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 d-flex align-items-center order-2 order-md-1">
+                        <div class="german-section-text">
+                            <p class="german-text text-center text-md-left">
+                                <img src="./images/polygon.png" class="d-none d-md-block" width="12" alt="polygon">
+                                Working in Germany has a very important advantage, which is that it may be a way to obtain permanent residence and eventually German citizenship. The conditions for issuing a work visa have become easier. <br>
+Due to the conditions that this country provides for the workforce, there are many advantages that you will take into account in some of the advantages of working in Germany. <br>
+Possibility to obtain accommodation. <br>
+Possibility of obtaining a companion visa. <br>
+Access to social services. <br>
+Health care for all family members. <br>
+Possibility to travel to the European Union without a visa. <br>
+High salaries, impressive benefits, and job security. <br>
+This is one of the reasons why many people immigrate to Germany. <br>
+Our agency is always ready to provide advice on work and immigration to Germany through our office in Germany or our office in Jordan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-1 order-md-1 mb-3 mb-md-0">
+                        <div class="german-banner">
+                            <img src="./images/working-abroad-banner.png" alt="banner for working"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="education" data-aos="fade-right">
+                <div class="single-pill">
+                    <a href="#work-abroad" class="single-pill-link">Education</a>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 d-flex align-items-center order-2 order-md-1">
+                        <div class="german-section-text">
+                            <p class="german-text text-center text-md-left">
+                                <img src="./images/polygon.png" class="d-none d-md-block" width="12" alt="polygon">
+                                Studying in Germany in most German universities is funded by the government, as it works
+                                to recruit
+                                students from all over the world.
+                                Where a decree was issued by the
+                                government to cancel all tuition
+                                fees in universities in 2014
+                                However, this abolition of fees
+                                does not affect higher education
+                                and private universities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-1 order-md-1 mb-3 mb-md-0">
+                        <div class="german-banner">
+                            <img src="./images/education-banner.png" alt="banner for working" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5">
+                <p class="german-text">
+                    <img src="./images/polygon.png" class="d-none d-md-block" width="12" alt="polygon">
+                    The student at the bachelor’s stage may pay symbolic amounts to cover the expenses of services
+                    provided by the university and the expenses of registration fees, which are symbolic amounts ranging
+                    from (150 to 250) only.
+                    For foreign students, this decision was a golden opportunity to complete their studies abroad for
+                    free.
+                </p>
+            </div>
+            <div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 d-flex align-items-center order-2 order-md-1">
+                        <div class="german-section-text">
+                            <p class="german-text text-center text-md-left">
+                                <img src="./images/polygon.png" class="d-none d-md-block" width="12" alt="polygon">
+                                Since the study in Germany is done in the German language, those wishing to study must pass one of
+                                the international exams for the
+                                German language, namely 
+                                A1, A2, B1, B2 where they must meet
+                                the condition of the degree of
+                                admission to the university they
+                                wish to join, which is the average
+                                level in most.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-1 order-md-1 mb-3 mb-md-0">
+                        <div class="german-banner">
+                            <img src="./images/education-banner-2.png" alt="banner for working" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="py-5">
+                  <p class="german-text">
+                      <img src="./images/polygon.png" class="d-none d-md-block" width="12" alt="polygon">
+                      Why should a group of foreign students study the preparatory year before starting their university studies, and the student learns in this year the basic materials that qualify to study the required branch.
+                  </p>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12 col-md-6 d-flex align-items-center order-2 order-md-1">
+                    <div class="german-section-text">
+                        <p class="german-text text-center text-md-left">
+                            <img src="./images/polygon.png" class="d-none d-md-block" width="12" alt="polygon">
+                            The Preparatory College prepares you technically and linguistically in an international school before studying 
+                            at a German university if your
+                            previous education is not sufficient
+                            for direct study.
+                            Most universities take
+                            a two-semester preparatory course
+                            Participation in the assessment
+                            test is also possible after one semester if the applicant shows very good performance in the first semester.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-1 mb-3 mb-md-0">
+                    <div class="german-banner">
+                        <img src="./images/education-banner-4.png" alt="banner for working" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--     copyrights
+ -->
+    <div class="copy-rights">
+        <p class="m-0">All rights reserved &#169;</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--       Custome Script
+ -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

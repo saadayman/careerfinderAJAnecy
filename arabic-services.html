@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     smooth scroll cdn
+ -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!--     Bootstrap CDN
+ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!--  Jquery CDN
+ -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Career Finder Agency</title>
+</head>
+
+<body>
+  <!--  navigation
+ -->
+ <nav class="my-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="logo" class="img-fluid" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-8 d-flex align-items-center justify-content-center">
+                <div class="my-nav-links">
+                    <ul class="list-unstyled m-0 links-list">
+                         <li class="my-nav-links-item m-0">
+                            <a href="./arabic-about.html" class="my-nav-links-link">عن الموقع</a>
+                        </li>
+                        <li class="my-nav-links-item m-0">
+                            <a href="./arabic-index.html#contact-section" class="my-nav-links-link">تواصل معنا</a>
+                        </li>
+                        <li class="my-nav-links-item m-0 position-relative arrow-hover arab-hover">
+                            <a href="./arabic-services.html" class="my-nav-links-link">الخدمات</a>
+                            <div class="hover-dropdown">
+                                <ul class="list-unstyled m-0">
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-services.html#career-advice" class="hover-dropdown-link">
+                                            النصائح المهنية
+                                        </a>
+                                    </li>
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-services.html#work-abroad" class="hover-dropdown-link">
+                                            العمل في الخارج
+                                        </a>
+                                    </li>
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-services.html#education-abroad" class="hover-dropdown-link">
+                                            الدراسة في الخارج
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="my-nav-links-item m-0 position-relative arrow-hover arab-hover">
+                            <a href="./arabic-german-program.html" class="my-nav-links-link">البرنامج الألماني</a>
+                            <div class="hover-dropdown">
+                                <ul class="list-unstyled m-0">
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-german-program.html#working-abroad" class="hover-dropdown-link">
+                                            العمل في الخارج
+                                        </a>
+                                    </li>
+                                    <li class="m-0 hover-dropdown-item">
+                                        <a href="./arabic-german-program.html#education" class="hover-dropdown-link">
+                                            التعليم
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="my-nav-links-item m-0">
+                            <a href="./arabic-index.html" class="my-nav-links-link">الرئيسة</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-2 d-flex align-items-center">
+                <div class="language-switch">
+                    <a href="./arabic-index.html" class="lang-pill">العربية</a><a href="./index.html"
+                        class="lang-pill">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--     mobile nav
+-->
+<nav class="my-mobile-nav">
+    <div class="container">
+        <div class="mobile-nav-wrapper">
+            <div class="mobile-nav-logo">
+                <a href="#">
+                    <img src="./images/logo.png" alt="logo-mobile" width="120" />
+                </a>
+            </div>
+            <div class="mobile-menu-btn" onclick="handleClick()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="mobile-nav-links">
+    <ul class="list-unstyled m-0">
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-index.html" class="mobile-nav-links-link"> الرئيسة</a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-services.html" class="mobile-nav-links-link"> الخدمات </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-german-program.html" class="mobile-nav-links-link"> البرنامج الألماني </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-index.html#contact-section" class="mobile-nav-links-link"> تواصل معنا </a>
+        </li>
+          <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-about.html" class="mobile-nav-links-link">  عن الموقع </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+            <a href="./index.html" class="mobile-nav-links-link">
+              English
+            </a>
+          </li>
+          <li class="m-0 mobile-nav-links-item">
+            <a href="./arabic-index.html" class="mobile-nav-links-link">
+              العربية
+            </a>
+          </li>
+    </ul>
+</div>
+
+
+    <!--   Hero Section
+    -->
+    <section class="hero-section">
+        <div class="hero-text-wrapper">
+            <div class="container">
+                <div class="d-flex justify-content-end">
+                    <h1 class="about-us-heading m-0 ml-auto" data-aos="fade-left">الخدمات</h1>
+                </div>
+                <div class="services-pills" data-aos="fade-left">
+                    <div class="single-pill">
+                        <a href="#career-advice" class="single-pill-link pill-color-switch">النصائح المهنية</a>
+                    </div>
+                    <div class="single-pill">
+                        <a href="#work-abroad" class="single-pill-link">العمل في الخارج</a>
+                    </div>
+                    <div class="single-pill">
+                        <a href="#education-abroad" class="single-pill-link pill-color-switch">الدراسة في الخارج</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="hero-wrapper h-100 w-100">
+            <div class="hero-carouesl h-100 w-100">
+                <div id="carouselExampleIndicators" class="carousel slide h-100 w-100" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner h-100 w-100">
+                        <div class="carousel-item h-100 w-100 active">
+                            <div class="caro-img caro-img1"></div>
+                        </div>
+                        <div class="carousel-item h-100 w-100">
+                            <div class="caro-img caro-img2"></div>
+                        </div>
+                        <div class="carousel-item h-100 w-100">
+                            <div class="caro-img caro-img3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     services section 
+ -->
+    <section class="services-section">
+        <div class="single-service" id="career-advice">
+            <div class="container">
+               <div class="d-flex justify-content-end">
+                <div class="single-pill mb-3 mb-md-5">
+                    <a href="#" class="single-pill-link pill-color-switch">النصائح المهنية</a>
+                </div>
+               </div>
+                <p class="single-service-text text-right">
+                    نحن نقدم النصائح بانتظام لمرشحينا حول كيفية تطوير أنفسهم ومهنهم. في كثير من الأحيان ، يجد الأشخاص أنفسهم يطرحون السؤال "ما الوظيفة التي يجب أن أقوم بها بعد ذلك؟" غالبًا ما يكون من الصعب القيام بالخطوات التالية ، ولكن تسليح نفسك بالأدوات ذات الصلة يمكن أن يساعدك على النجاح. التحضير للمقابلة التالية ، وتجهيز نفسك لإجراء مناقشات مع مديرك حول التقدم وتقييم الأداء الخاص بك ، كلها خطوات في الاتجاه الصحيح. مستشارونا المتعاونون وذو الخبرة ماهرون في تقديم المشورة بشأن الفرص المصممة خصيصًا لك ، مما يسمح لك بالتفوق في حياتك المهنية أو تجربة شيء جديد ، باستخدام المهارات القابلة للتحويل
+                    <img src="./images/polygon.png" class="polygon arabic-polygon" alt="polygon" width="20">
+                </p>
+                <p class="single-service-text text-right">
+                   يمكننا مساعدتك في العثور على أفضل فرصة تناسبك وتناسب مجموعة مهاراتك ، بالإضافة إلى مساعدتك على تحسين دورك الوظيفي الحالي ودفع نفسك للوصول إلى أعلى إمكانات ممكنة. استكشف قسم المشورة المهنية على موقعنا على الإنترنت لتنمو وتطور حياتك المهنية. مع Career Finder Agency ، يمكنك الشعور بالثقة في قدرتك والاقتراب أكثر من الوظيفة التي تحلم بها
+                    <img src="./images/polygon.png" class="polygon arabic-polygon" alt="polygon" width="20">
+                </p>
+                
+            </div>
+        </div>
+        <div class="single-service" id="work-abroad">
+            <div class="container">
+                <div class="d-flex justify-content-end">
+                    <div class="single-pill mb-3 mb-md-5">
+                        <a href="#" class="single-pill-link pill-color-switch">العمل في الخارج</a>
+                    </div>
+                </div>
+                <p class="single-service-text text-right">
+                   تحتاج الشركات الألمانية في العديد من الصناعات إلى موظفين مؤهلين تأهيلاً جيدًا. يوفر عالم العلوم وبساتين الأوساط الأكاديمية أيضًا فرصًا جذابة. بالنسبة للكثير من الناس ، التدريب المهني المزدوج هو الطريق إلى الوظيفة التي يحلمون بها. 
+                    <img src="./images/polygon.png"class="polygon arabic-polygon" alt="polygon" width="20">
+                </p>
+                <p class="single-service-text text-right">
+من المحتمل أنك ستنتقل إلى بلد لا تتحدث لغته. اعتبر هذه مكافأة عند العمل في الخارج ، لأنها تمنحك فرصة فريدة لتعلم لغة في الخارج وممارسة مهاراتك الجديدة مع السكان المحليين. لن يساعدك التحدث باللغة على الاندماج بشكل أفضل في دورك الجديد فحسب ، بل سيساعدك أيضًا على التميز عن الآخرين في المستقبل.
+ <img src="./images/polygon.png"class="polygon arabic-polygon" alt="polygon" width="20">
+                </p>
+                <p class="single-service-text text-right">
+غالبًا ما تأتي الرغبة في السفر من دافع لمعرفة المزيد عن أنفسنا. يختار الكثير من الناس العمل في الخارج ليس فقط للسفر ، ولكن أيضًا لتجربة وظائف وأدوار جديدة مختلفة. على وجه الخصوص ، تعد تأشيرات العمل فرصة رائعة لتغمر قدميك في عدد قليل من الصناعات الجديدة. من المحتمل جدًا أنه من خلال العمل في الخارج ستجد اهتمامات وشغفًا جديدًا ، مما قد يقودك إلى مسار وظيفي جديد لم تكن لتكتشفه بطريقة أخرى. 
+
+                    <img src="./images/polygon.png"class="polygon arabic-polygon" alt="polygon" width="20">
+                </p>
+            </div>
+        </div>
+        <div class="single-service" id="education-abroad">
+            <div class="container">
+               <div class="d-flex justify-content-end">
+                <div class="single-pill mb-3 mb-md-5">
+                    <a href="#" class="single-pill-link pill-color-switch">الدراسة في الخارج</a>
+                </div>
+               </div>
+                <p class="single-service-text text-right">
+                    .يقوم مكتبنا بتأمين قبول افضل الجامعات بالمانيا
+                    <img src="./images/polygon.png" class="polygon arabic-polygon" alt="polygon" width="20">
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--     copyrights
+ -->
+    <div class="copy-rights">
+        <p class="m-0">&#169; جميع الحقوق محفوظة</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--       Custome Script
+ -->
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

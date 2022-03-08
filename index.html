@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     smooth scroll cdn
+ -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!--     Bootstrap CDN
+ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--  Jquery CDN
+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Career Finder Agency</title>
+  </head>
+  <body>
+    <!--  navigation
+ -->
+    <nav class="my-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/logo.png" alt="logo" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <div class="col-8 d-flex align-items-center justify-content-center">
+            <div class="my-nav-links">
+              <ul class="list-unstyled m-0 links-list">
+                <li class="my-nav-links-item m-0">
+                  <a href="./index.html" class="my-nav-links-link">Home</a>
+                </li>
+                <li class="my-nav-links-item m-0 position-relative arrow-hover">
+                  <a href="./services.html" class="my-nav-links-link"
+                    >Services</a
+                  >
+                  <div class="hover-dropdown">
+                    <ul class="list-unstyled m-0">
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./services.html#career-advice"
+                          class="hover-dropdown-link"
+                        >
+                          Career Advice
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./services.html#work-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          Work Abroad
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./services.html#education-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          Education Abroad
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="my-nav-links-item m-0 position-relative arrow-hover">
+                  <a href="./german-program.html" class="my-nav-links-link"
+                    >German-program</a
+                  >
+                  <div class="hover-dropdown">
+                    <ul class="list-unstyled m-0">
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./german-program.html#working-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          Work Abroad
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./german-program.html#education"
+                          class="hover-dropdown-link"
+                        >
+                          Education
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="my-nav-links-item m-0">
+                  <a
+                    href="./index.html#contact-section"
+                    class="my-nav-links-link"
+                    >Contact-Us</a
+                  >
+                </li>
+                 <li class="my-nav-links-item m-0">
+                  <a
+                    href="./about.html"
+                    class="my-nav-links-link"
+                    >About-Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 d-flex align-items-center">
+            <div class="language-switch">
+              <a href="./arabic-index.html" class="lang-pill">العربية</a
+              ><a href="./index.html" class="lang-pill">English</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--     mobile nav
+ -->
+    <nav class="my-mobile-nav">
+      <div class="container">
+        <div class="mobile-nav-wrapper">
+          <div class="mobile-nav-logo">
+            <a href="./index.html">
+              <img src="./images/logo.png" alt="logo-mobile" width="120" />
+            </a>
+          </div>
+          <div class="mobile-menu-btn" onclick="handleClick()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-nav-links">
+      <ul class="list-unstyled m-0">
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./index.html" class="mobile-nav-links-link"> Home </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./services.html" class="mobile-nav-links-link"> Services </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./german-program.html" class="mobile-nav-links-link">
+            German-program
+          </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./index.html#contact-section" class="mobile-nav-links-link">
+            Contact-Us
+          </a>
+        </li>
+           <li class="m-0 mobile-nav-links-item">
+          <a href="./about.html" class="mobile-nav-links-link">
+         About-Us
+          </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./index.html" class="mobile-nav-links-link"> English </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./arabic-index.html" class="mobile-nav-links-link">
+            العربية
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <!--   Hero Section
+    -->
+    <section class="hero-section">
+      <div class="hero-text-wrapper">
+        <div class="container">
+          <h1 class="about-us-heading m-0" data-aos="fade-right">About Us</h1>
+          <p class="hero-text m-0" data-aos="fade-right">
+            We believe the success and growth of our business can be attributed
+            to consistency in terms of standards and policies and to the efforts
+            of our supportive local and international partners. to us , it is
+            vital that we treat every client with the highest dedication and
+            responsibility . Our professional belief in the ethics , and quality
+            has evolved into aset of corrporate standards and practices which we
+            use as our benchmark for excellence . <br />
+            This attitude of providing the highest level of quality in all of
+            our endeavours has paid-off at every steps of the way . <br />
+            Our clients continue to display this confidence in us via their
+            strong recommendtions and loyalty.
+          </p>
+        </div>
+      </div>
+      <div class="hero-wrapper h-100 w-100">
+        <div class="hero-carouesl h-100 w-100">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide h-100 w-100"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner h-100 w-100">
+              <div class="carousel-item h-100 w-100 active">
+                <div class="caro-img caro-img1"></div>
+              </div>
+              <div class="carousel-item h-100 w-100">
+                <div class="caro-img caro-img2"></div>
+              </div>
+              <div class="carousel-item h-100 w-100">
+                <div class="caro-img caro-img3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--     Contact Section
+ -->
+    <section class="contact-section" id="contact-section">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between mb-5">
+          <div class="">
+            <h1 class="m-0 contact-us-heading">Contact Us</h1>
+            <p class="m-0 contact-us-subheading">Let's stay in touch</p>
+          </div>
+          <div class="d-none d-md-block">
+            <img src="./images/logo.png" alt="the logo" width="250" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <div class="contact-info mb-3 mb-md-4">
+              <div class="single-contact-info">
+                <div class="my-align">
+                  <div class="single-contact-img">
+                    <img
+                      src="./images/phone.png"
+                      class="img-fluid"
+                      alt="contact picture"
+                    />
+                  </div>
+                </div>
+                <div class="single-contact-text">
+                  <h5 class="m-0">Call Us</h5>
+                  <span class="phone-number">+962 770004215</span>
+                  <span class="phone-number">+962 796001665</span>
+                  <span class="phone-number">+962 64392425</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info mb-3 mb-md-5">
+              <div class="single-contact-info">
+                <div class="my-align">
+                  <div class="single-contact-img">
+                    <img
+                      src="./images/phone.png"
+                      class="img-fluid"
+                      alt="contact picture"
+                    />
+                  </div>
+                </div>
+                <div class="single-contact-text">
+                  <h5 class="m-0">E-mail</h5>
+                  <span class="phone-number"
+                    >coordinator@careerfinderagency.com</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact-info mb-3">
+              <div class="single-contact-info">
+                <div class="my-align">
+                  <div class="single-contact-img">
+                    <img
+                      src="./images/address.png"
+                      class="img-fluid"
+                      alt="contact picture"
+                    />
+                  </div>
+                </div>
+                <div class="single-contact-text">
+                  <h5 class="m-0">Address</h5>
+                  <span class="phone-number"
+                    >Al-Yasmen - Arafat ST. <br />
+                    Al-oun Complex 2nd Floor Office (204)</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 offset-md-1">
+            <div class="contact-form">
+              <form action="#">
+                <div class="form-group">
+                  <input type="text" placeholder="your name" />
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="your email" />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    placeholder="your message"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="contact-form-btn"><a href="mailto:coordinator@careerfinderagency.com" class="send-btn"">Send</a></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--     managers
+ -->    <section class="managers-section">
+      <h1 class="managers-heading text-center mb-0">
+        For inquiries and contact our office in Germany
+      </h1>
+      <div class="managers">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+              <div class="single-manager">
+                <p class="m-0 manager-title">Office Manager :</p>
+                <p class="manager-contact m-0">
+                  Phone Number : <span><strong>+49-176-81125868</strong></span>
+                </p>
+                <p class="manager-contact m-0">
+                  E-mail :
+                  <span><strong>chanel@careerfinderagency.com</strong></span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="single-manager">
+                <p class="m-0 manager-title">Office Manager :</p>
+                <p class="manager-contact m-0">
+                  Phone Number : <span><strong>+49-152-51345982</strong></span>
+                </p>
+                <p class="manager-contact m-0">
+                  E-mail :
+                  <span><strong>mahmoud@careerfinderagency.com</strong></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- social media section -->
+    <section class="social-media-section">
+      <div class="container" data-aos="fade-right">
+        <h1 class="find-us-heading text-white m-0">Find Us on :</h1>
+        <div class="row">
+          <div class="col-12 col-md-4 offset-md-4">
+            <div class="logos-wrapper">
+              <div class="app-logo">
+                <a
+                  href="https://www.facebook.com/Career-finder-agency-107567675056358"
+                  ><img
+                    src="./images/facebook-logo.png"
+                    alt="facebook logo"
+                    class="img-fluid"
+                    width="70"
+                /></a>
+              </div>
+              <div class="app-logo">
+                <a href="#"
+                  ><img
+                    src="./images/instagram-logo.png"
+                    alt="instagram logo"
+                    class="img-fluid"
+                    width="70"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--     copyrights
+ -->
+    <div class="copy-rights">
+      <p class="m-0">All rights reserved &#169;</p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!--       Custome Script
+ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

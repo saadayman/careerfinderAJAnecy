@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     smooth scroll cdn
+ -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!--     Bootstrap CDN
+ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--  Jquery CDN
+ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Career Finder Agency</title>
+  </head>
+  <body id="about">
+    <div class="bg-overlay"></div>
+    <!--  navigation
+ -->
+    <nav class="my-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/logo.png" alt="logo" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <div class="col-8 d-flex align-items-center justify-content-center">
+            <div class="my-nav-links">
+              <ul class="list-unstyled m-0 links-list">
+                <li class="my-nav-links-item m-0">
+                  <a
+                    href="./arabic-about.html#aboutGermany"
+                    class="my-nav-links-link"
+                    >عن الموقع</a
+                  >
+                </li>
+                <li class="my-nav-links-item m-0">
+                  <a
+                    href="./arabic-index.html#contact-section"
+                    class="my-nav-links-link"
+                    >تواصل معنا</a
+                  >
+                </li>
+                <li
+                  class="my-nav-links-item m-0 position-relative arrow-hover arab-hover"
+                >
+                  <a href="./arabic-services.html" class="my-nav-links-link"
+                    >الخدمات</a
+                  >
+                  <div class="hover-dropdown">
+                    <ul class="list-unstyled m-0">
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./arabic-services.html#career-advice"
+                          class="hover-dropdown-link"
+                        >
+                          النصائح المهنية
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./arabic-services.html#work-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          العمل في الخارج
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./arabic-services.html#education-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          الدراسة في الخارج
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  class="my-nav-links-item m-0 position-relative arrow-hover arab-hover"
+                >
+                  <a
+                    href="./arabic-german-program.html"
+                    class="my-nav-links-link"
+                    >البرنامج الألماني</a
+                  >
+                  <div class="hover-dropdown">
+                    <ul class="list-unstyled m-0">
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./arabic-german-program.html#working-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          العمل في الخارج
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./arabic-german-program.html#education"
+                          class="hover-dropdown-link"
+                        >
+                          التعليم
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="my-nav-links-item m-0">
+                  <a href="./arabic-index.html" class="my-nav-links-link"
+                    >الرئيسة</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 d-flex align-items-center">
+            <div class="language-switch">
+              <a href="./arabic-about.html" class="lang-pill">العربية</a
+              ><a href="./about.html" class="lang-pill">English</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--     mobile nav
+ -->
+    <nav class="my-mobile-nav">
+      <div class="container">
+        <div class="mobile-nav-wrapper">
+          <div class="mobile-nav-logo">
+            <a href="#">
+              <img src="./images/logo.png" alt="logo-mobile" width="120" />
+            </a>
+          </div>
+          <div class="mobile-menu-btn" onclick="handleClick()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-nav-links">
+      <ul class="list-unstyled m-0">
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./arabic-index.html" class="mobile-nav-links-link">
+            الرئيسة</a
+          >
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./arabic-services.html" class="mobile-nav-links-link">
+            الخدمات
+          </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./arabic-german-program.html" class="mobile-nav-links-link">
+            البرنامج الألماني
+          </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a
+            href="./arabic-index.html#contact-section"
+            class="mobile-nav-links-link"
+          >
+            تواصل معنا
+          </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a
+            href="./arabic-about.html#aboutGermany"
+            class="mobile-nav-links-link"
+          >
+            عن الموقع
+          </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./about.html" class="mobile-nav-links-link"> English </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./arabic-about.html" class="mobile-nav-links-link">
+            العربية
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section
+      class="aboutUs-content"
+      id="aboutGermany"
+      data-aos="fade-right"
+      data-duration="500"
+    >
+      <div class="container">
+        <h1 class="text-right">, عن المانيا</h1>
+        <p class="text-right">
+          ألمانيا ، أو جمهورية ألمانيا الاتحادية كما تُعرف رسميًا هي دولة في وسط
+          أوروبا تجتذب الآلاف من الطلاب والعاملين الدوليين سنويًا. كقوة اقتصادية
+          رئيسية ودولة تعرض ثقافات غنية ومتنوعة ، تعتبر ألمانيا واحدة من أفضل
+          الأماكن للعيش فيها. تقع ألمانيا في ما يُعرف غالبًا بأوروبا الوسطى
+          وشمال جبال الألب وجنوب بحر الشمال وبحر البلطيق. إنها شرق فرنسا وغرب
+          بولندا.
+        </p>
+      </div>
+    </section>
+    <!--todo clocks-->
+    <section class="time my-5">
+      <div class="container d-flex justify-content-between">
+        <div class="Germany time" data-aos="fade-right" data-duration="500">
+          <p class="text-white text-center h3">: الوقت الان في المانيا</p>
+          <div
+            class="thetimenow-embeddable-clock"
+            data-type="clock"
+            data-font-color="#0e489e"
+            data-border-color="#000000"
+            data-background-color="#000000"
+            data-font-size="60"
+            data-location-type="country"
+            data-location-id="18"
+          >
+            <script
+              type="text/javascript"
+              src="https://www.thetimenow.com/ttn-embed.min.js"
+            ></script>
+          </div>
+        </div>
+        <div class="jordan-time" data-aos="fade-left" data-duration="500">
+          <p class="text-white text-center h3">: الوقت الان في الاردن</p>
+          <div
+            class="thetimenow-embeddable-clock"
+            data-type="clock"
+            data-font-color="#000000"
+            data-border-color="#000000"
+            data-background-color="#ffffff"
+            data-font-size="60"
+            data-location-type="city"
+            data-location-id="81851"
+          >
+            <a
+              href="https://ar.thetimenow.com/saudi_arabia/riyadh"
+              rel="nofollow"
+              target="_blank"
+              >© The Time Now</a
+            >
+          </div>
+          <script
+            type="text/javascript"
+            src="https://ar.thetimenow.com/ttn-embed.min.js"
+          ></script>
+        </div>
+      </div>
+    </section>
+    <!--about germany info-->
+    <section class="about-info" data-aos="fade-up">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-7 row-cols-lg-7">
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h5">العاصمة</small>
+              <img
+                src="./images/brandenburg-gate.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">برلين</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h5">اللغة</small>
+              <img
+                src="./images/language.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">الالمانيه</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h5">التعداد</small>
+              <img
+                src="./images/people.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">38,190,556</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h5">المساحة</small>
+              <img
+                src="./images/wide.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">357,588 &#13218;</small>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h5">التوقيت المحلي</small>
+              <img
+                src="./images/time-zone.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">GMT+1</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h5">رمز الاتصال</small>
+              <img
+                src="./images/telephone.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+
+              <small class="text-white h5">+49s</small>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="div d-flex flex-column align-items-center align-items-center"
+            >
+              <small class="text-white h5">العملة</small>
+              <img
+                src="./images/euro.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">اليورو</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about footer-->
+
+    <div class="copy-rights">
+      <p class="m-0">All rights reserved &#169;</p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!--       Custome Script
+ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./script/script.js"></script>
+    <a
+      style="display: none"
+      href="https://www.flaticon.com/free-icons/language"
+      title="language icons"
+      >Language icons created by Freepik - Flaticon</a
+    >
+  </body>
+</html>

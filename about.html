@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     smooth scroll cdn
+ -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!--     Bootstrap CDN
+ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--  Jquery CDN
+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Career Finder Agency</title>
+  </head>
+  <body id="about">
+    <div class="bg-overlay"></div>
+    <!--  navigation
+ -->
+    <nav class="my-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/logo.png" alt="logo" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <div class="col-8 d-flex align-items-center justify-content-center">
+            <div class="my-nav-links">
+              <ul class="list-unstyled m-0 links-list">
+                <li class="my-nav-links-item m-0">
+                  <a href="./index.html" class="my-nav-links-link">Home</a>
+                </li>
+                <li class="my-nav-links-item m-0 position-relative arrow-hover">
+                  <a href="./services.html" class="my-nav-links-link"
+                    >Services</a
+                  >
+                  <div class="hover-dropdown">
+                    <ul class="list-unstyled m-0">
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./services.html#career-advice"
+                          class="hover-dropdown-link"
+                        >
+                          Career Advice
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./services.html#work-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          Work Abroad
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./services.html#education-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          Education Abroad
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="my-nav-links-item m-0 position-relative arrow-hover">
+                  <a href="./german-program.html" class="my-nav-links-link"
+                    >German-program</a
+                  >
+                  <div class="hover-dropdown">
+                    <ul class="list-unstyled m-0">
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./german-program.html#working-abroad"
+                          class="hover-dropdown-link"
+                        >
+                          Work Abroad
+                        </a>
+                      </li>
+                      <li class="m-0 hover-dropdown-item">
+                        <a
+                          href="./german-program.html#education"
+                          class="hover-dropdown-link"
+                        >
+                          Education
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="my-nav-links-item m-0">
+                  <a
+                    href="./index.html#contact-section"
+                    class="my-nav-links-link"
+                    >Contact-Us</a
+                  >
+                </li>
+                <li class="my-nav-links-item m-0">
+                  <a href="./about.html#aboutGermany" class="my-nav-links-link"
+                    >About-Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 d-flex align-items-center">
+            <div class="language-switch">
+              <a href="./arabic-about.html" class="lang-pill">العربية</a
+              ><a href="./about.html" class="lang-pill">English</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--     mobile nav
+ -->
+    <nav class="my-mobile-nav">
+      <div class="container">
+        <div class="mobile-nav-wrapper">
+          <div class="mobile-nav-logo">
+            <a href="./index.html">
+              <img src="./images/logo.png" alt="logo-mobile" width="120" />
+            </a>
+          </div>
+          <div class="mobile-menu-btn" onclick="handleClick()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-nav-links">
+      <ul class="list-unstyled m-0">
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./index.html" class="mobile-nav-links-link"> Home </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./services.html" class="mobile-nav-links-link"> Services </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./german-program.html" class="mobile-nav-links-link">
+            German-program
+          </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./index.html#contact-section" class="mobile-nav-links-link">
+            Contact-Us
+          </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./about.html" class="mobile-nav-links-link"> About-Us </a>
+        </li>
+
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./about.html" class="mobile-nav-links-link"> English </a>
+        </li>
+        <li class="m-0 mobile-nav-links-item">
+          <a href="./arabic-about.html" class="mobile-nav-links-link">
+            العربية
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section
+      class="aboutUs-content"
+      id="aboutGermany"
+      data-aos="fade-left"
+      data-duration="350"
+    >
+      <div class="container">
+        <h1>About Germany</h1>
+        <p>
+          Germany, or the Federal Republic of Germany as it is known officially,
+          is a central European country attracting thousands of international
+          students and workers yearly. As a major economic force and a country
+          showcasing rich and diverse cultures, Germany is considered to be one
+          of the best places to live in. Germany lies in what is often called
+          Central Europe, north of the Alps, south of the North Sea and the
+          Baltic Sea. It's east of France, and west of Poland.
+        </p>
+      </div>
+    </section>
+    <!--todo clocks-->
+    <!--todo clocks-->
+    <section class="time my-5">
+      <div class="container">
+        <div class="Germany time" data-aos="fade-right">
+          <p class="text-white text-center h5">Time Now In Germany :</p>
+          <div
+            class="thetimenow-embeddable-clock"
+            data-type="clock"
+            data-font-color="#0e489e"
+            data-border-color="#000000"
+            data-background-color="#000000"
+            data-font-size="60"
+            data-location-type="country"
+            data-location-id="18"
+          >
+            <script
+              type="text/javascript"
+              src="https://www.thetimenow.com/ttn-embed.min.js"
+            ></script>
+          </div>
+        </div>
+        <div class="jordan-time" data-aos="fade-left">
+          <p class="text-white text-center h5">Time Now In Jordan :</p>
+         <div class="thetimenow-embeddable-clock" data-type="clock" data-font-color="#000000" data-border-color="#000000" data-background-color="#ffffff" data-font-size="60" data-location-type="city" data-location-id="81851" > <a href="https://ar.thetimenow.com/saudi_arabia/riyadh" rel="nofollow" target="_blank">© The Time Now</a> </div>
+<script type="text/javascript" src="https://ar.thetimenow.com/ttn-embed.min.js"></script>
+
+      </div>
+    </section>
+    <!--about germany info-->
+    <section class="about-info" data-aos="fade-up">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-7  ">
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center justify-content-between">
+              <small class="text-white h6">Capital</small>
+              <img
+                src="./images/brandenburg-gate.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">Berlin</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h6">Language</small>
+              <img
+                src="./images/language.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">German</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h6">Census</small>
+              <img
+                src="./images/people.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">38,190,556</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h6">size</small>
+              <img
+                src="./images/wide.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">357,588 &#13218;</small>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h6">Local time</small>
+              <img
+                src="./images/time-zone.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">GMT+1</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="div d-flex flex-column align-items-center">
+              <small class="text-white h6">call key</small>
+              <img
+                src="./images/telephone.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+
+              <small class="text-white h5">+49s</small>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="div d-flex flex-column align-items-center align-items-center"
+            >
+              <small class="text-white h6">Currency</small>
+              <img
+                src="./images/euro.png"
+                class="img-fluid"
+                alt="brandenburg-gate"
+              />
+              <small class="text-white h5">euro</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about footer-->
+
+    <div class="copy-rights">
+      <p class="m-0">All rights reserved &#169;</p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!--       Custome Script
+ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script/script.js"></script>
+    <a
+      style="display: none"
+      href="https://www.flaticon.com/free-icons/language"
+      title="language icons"
+      >Language icons created by Freepik - Flaticon</a
+    >
+  </body>
+</html>

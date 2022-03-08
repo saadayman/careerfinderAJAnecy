@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--     smooth scroll cdn
+ -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!--     Bootstrap CDN
+ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!--  Jquery CDN
+ -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Career Finder Agency</title>
+  </head>
+  <body>
+    <!--  navigation
+ -->
+ <nav class="my-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <div class="logo">
+          <a href="#">
+            <img src="./images/logo.png" alt="logo" class="img-fluid" />
+          </a>
+        </div>
+      </div>
+      <div class="col-8 d-flex align-items-center justify-content-center">
+        <div class="my-nav-links">
+          <ul class="list-unstyled m-0 links-list">
+            <li class="my-nav-links-item m-0">
+              <a href="./index.html" class="my-nav-links-link">Home</a>
+            </li>
+            <li class="my-nav-links-item m-0 position-relative arrow-hover">
+              <a href="./services.html" class="my-nav-links-link">Services</a>
+              <div class="hover-dropdown">
+                <ul class="list-unstyled m-0">
+                  <li class="m-0 hover-dropdown-item">
+                    <a href="./services.html#career-advice" class="hover-dropdown-link">
+                      Career Advice
+                    </a>
+                  </li>
+                  <li class="m-0 hover-dropdown-item">
+                    <a href="./services.html#work-abroad" class="hover-dropdown-link">
+                      Work Abroad
+                    </a>
+                  </li>
+                  <li class="m-0 hover-dropdown-item">
+                    <a href="./services.html#education-abroad" class="hover-dropdown-link">
+                      Education Abroad
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="my-nav-links-item m-0 position-relative arrow-hover">
+              <a href="./german-program.html" class="my-nav-links-link">German-program</a>
+              <div class="hover-dropdown">
+                <ul class="list-unstyled m-0">
+                  <li class="m-0 hover-dropdown-item">
+                    <a href="./german-program.html#working-abroad" class="hover-dropdown-link">
+                      Work Abroad
+                    </a>
+                  </li>
+                  <li class="m-0 hover-dropdown-item">
+                    <a href="./german-program.html#education" class="hover-dropdown-link">
+                      Education
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="my-nav-links-item m-0">
+              <a href="./index.html#contact-section" class="my-nav-links-link"
+                >Contact-Us</a
+              >
+            </li>
+               <li class="my-nav-links-item m-0">
+              <a href="./about.html" class="my-nav-links-link"
+                >About-Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2 d-flex align-items-center">
+        <div class="language-switch">
+          <a href="./arabic-index.html" class="lang-pill">العربية</a
+          ><a href="./index.html" class="lang-pill">English</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--     mobile nav
+-->
+<nav class="my-mobile-nav">
+  <div class="container">
+    <div class="mobile-nav-wrapper">
+      <div class="mobile-nav-logo">
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="logo-mobile" width="120" />
+        </a>
+      </div>
+      <div class="mobile-menu-btn" onclick="handleClick()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav-links">
+  <ul class="list-unstyled m-0">
+    <li class="m-0 mobile-nav-links-item">
+      <a href="./index.html" class="mobile-nav-links-link"> Home </a>
+    </li>
+    <li class="m-0 mobile-nav-links-item">
+      <a href="./services.html" class="mobile-nav-links-link"> Services </a>
+    </li>
+    <li class="m-0 mobile-nav-links-item">
+      <a href="./german-program.html" class="mobile-nav-links-link"> German-program </a>
+    </li>
+    <li class="m-0 mobile-nav-links-item">
+      <a href="./index.html#contact-section" class="mobile-nav-links-link"> Contact-Us </a>
+    </li>
+    <li class="m-0 mobile-nav-links-item">
+      <a href="./about.html" class="mobile-nav-links-link"> About-Us </a>
+    </li>
+    <li class="m-0 mobile-nav-links-item">
+      <a href="./index.html" class="mobile-nav-links-link">
+        English
+      </a>
+    </li>
+    <li class="m-0 mobile-nav-links-item">
+      <a href="./arabic-index.html" class="mobile-nav-links-link">
+        العربية
+      </a>
+    </li>
+  </ul>
+</div>
+
+    <!--   Hero Section
+    -->
+    <section class="hero-section">
+      <div class="hero-text-wrapper">
+        <div class="container">
+          <h1 class="about-us-heading m-0" data-aos="fade-right">Services</h1>
+          <div class="services-pills" data-aos="fade-right">
+              <div class="single-pill">
+                  <a href="#career-advice" class="single-pill-link pill-color-switch">Career Advice</a>
+              </div>
+              <div class="single-pill">
+                  <a href="#work-abroad" class="single-pill-link">Work Abroad</a>
+              </div>
+              <div class="single-pill">
+                  <a href="#education-abroad" class="single-pill-link pill-color-switch">Education Abroad</a>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wrapper h-100 w-100">
+        <div class="hero-carouesl h-100 w-100">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide h-100 w-100"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner h-100 w-100">
+              <div class="carousel-item h-100 w-100 active">
+                <div class="caro-img caro-img1"></div>
+              </div>
+              <div class="carousel-item h-100 w-100">
+                <div class="caro-img caro-img2"></div>
+              </div>
+              <div class="carousel-item h-100 w-100">
+                <div class="caro-img caro-img3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--     services section 
+ -->
+ <section class="services-section">
+     <div class="single-service" id="career-advice">
+         <div class="container"  data-aos="fade-right">
+            <div class="single-pill mb-3 mb-md-5">
+                <a href="#" class="single-pill-link pill-color-switch">Career Advice</a>
+            </div>
+           <p class="single-service-text">
+                <img src="./images/polygon.png" class="polygon" alt="polygon" width="20">
+            We are regularly giving advice to our candidates on how to develop themselves and their careers. Often, people find themselves asking the question ‘What job should I do next?’ Next steps are often hard to make, but arming yourself with the relevant tools can help you to succeed. Preparing for your next interview, readying yourself to have discussions with your manager about progression and benchmarking your own performance, are all steps in the right direction. Our helpful and experience consultants are skilled in giving advice on opportunities that are specially tailored to you, allowing you to excel within your career or try something new, using transferrable skills.
+            </p>
+            <p class="single-service-text ">
+                <img src="./images/polygon.png" class="polygon" alt="polygon" width="20">
+              We can help you find the best opportunity to suit you and your skillset, as well as helping you improve your current job role and pushing yourself to reach the highest potential possible. Explore the careers advice section on our website to grow and develop your career.
+
+            </p>
+            <p   class="text-white  h4 p-2">
+              <img src="./images/polygon.png" class="polygon" alt="polygon" width="20">
+              " With Career Finder Agency, you can feel confident in your ability and move closer to your dream job "</p>
+         </div>
+     </div>
+     <div class="single-service" id="work-abroad">
+         <div class="container"  data-aos="fade-right">
+            <div class="single-pill mb-3 mb-md-5">
+                <a href="#" class="single-pill-link pill-color-switch">Work Abroad</a>
+            </div>
+            <p class="single-service-text">
+                <img src="./images/polygon.png" class="polygon" alt="polygon" width="20">
+                In many industries, German businesses are in need of well-qualified staff. The world of science and the groves of academia likewise offer appealing opportunities. For many people, dual vocational training is the way to their dream job.
+            </p>
+              <p class="single-service-text">
+                <img src="./images/polygon.png" class="polygon" alt="polygon" width="20">
+               Chances are that you’ll be moving to a country where you don’t speak the language. Consider this a bonus for when you work overseas, as it gives you the unique opportunity to learn a language abroad and practice your new skills with locals. Speaking the language will not only help you better integrate into your new role, but also help you stand out from the crowd in the future.
+            </p>
+              <p class="single-service-text">
+                <img src="./images/polygon.png" class="polygon" alt="polygon" width="20">
+           Often, the desire to travel comes from a drive to learn more about ourselves. Many people choose to work abroad not only to travel, but also to try out different jobs and new roles. In particular, working  visas are a great opportunity to dip your feet into a few new industries. It is very likely that by working abroad you will find new interests and passions, which might lead you on a path to a new career that you wouldn’t have discovered otherwise.
+
+            </p>
+            
+         </div>
+     </div>
+     <div class="single-service" id="education-abroad">
+         <div class="container"  data-aos="fade-right">
+            <div class="single-pill mb-3 mb-md-5">
+                <a href="#" class="single-pill-link pill-color-switch">Education Abroad</a>
+            </div>
+            <p class="single-service-text">
+                <img src="./images/polygon.png" class="polygon" alt="polygon" width="20">
+                Our office secures the best intenational univesities.
+            </p>
+         </div>
+     </div>
+ </section>
+    <!--     copyrights
+ -->
+    <div class="copy-rights">
+      <p class="m-0">All rights reserved &#169;</p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--       Custome Script
+ -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
