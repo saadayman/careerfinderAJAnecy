@@ -669,15 +669,13 @@ body#about {
   scroll-behavior: smooth;
 }
 #about {
-  background: #fff url("../images/ricardo-gomez-angel-fv0yV5-Pbjc-unsplash.jpg") no-repeat
-    center / cover;
+  background: #fff url("../images/ricardo-gomez-angel-fv0yV5-Pbjc-unsplash.jpg")
+    no-repeat center / cover;
   margin: 0;
   box-sizing: border-box;
   width: 100%;
 }
-#about *:not(.bg-overlay) {
-  z-index: 100;
-}
+
 .bg-overlay {
   background-color: rgba(117, 102, 239, 58%);
   position: fixed;
@@ -698,6 +696,10 @@ body#about {
 }
 .about-info {
   margin-block: 5rem;
+}
+
+.about-info .row .col small {
+  white-space: nowrap;
 }
 
 .about-info .row .col img {
@@ -727,6 +729,11 @@ body#about {
   .time .container {
     justify-content: center !important;
     gap: 1.2rem !important;
+  }
+}
+@media (max-width: 340px) {
+  .single-service-text {
+    font-size: 0.8rem !important;
   }
 }
 *,
